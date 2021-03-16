@@ -19,10 +19,6 @@ export class NavComponent {
     this.accountService.login(this.user).subscribe(
       response => {
         this.router.navigate(['/members']);
-      },
-      error =>{
-        console.log(error);
-        this.toastr.error(error.error);
       });
   }
 
